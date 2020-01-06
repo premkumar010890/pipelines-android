@@ -41,4 +41,5 @@ steps:
 
 - task: DownloadPipelineArtifact@2
   inputs:
+    path: $(Pipeline.Workspace)/WebApp
     artifact: WebApp
