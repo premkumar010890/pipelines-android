@@ -33,3 +33,11 @@ steps:
     artifactName: 'drop'
     artifactType: 'container'
   displayName: Publish artifacts
+
+steps:
+- publish: $(System.DefaultWorkingDirectory)/bin/WebApp
+  artifact: WebApp
+
+  steps:
+- download: current
+  artifact: WebApp
