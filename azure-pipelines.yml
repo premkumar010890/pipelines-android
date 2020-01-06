@@ -33,3 +33,10 @@ steps:
     artifactName: 'drop'
     artifactType: 'container'
   displayName: Publish artifacts
+
+
+- task: DownloadPipelineArtifact@2
+  inputs:
+    artifact: WebApp
+    patterns: '**/*.js'
+    path: $(Build.SourcesDirectory)/bin
