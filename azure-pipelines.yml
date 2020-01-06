@@ -37,5 +37,5 @@ steps:
 
 - task: DownloadPipelineArtifact@2
   inputs:
-    path: $(Pipeline.Workspace)/WebApp
+    path: $(build.artifactStagingDirectory)/drop/container/apk
     artifact: WebApp
