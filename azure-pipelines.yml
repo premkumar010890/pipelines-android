@@ -33,9 +33,3 @@ steps:
     artifactName: 'drop'
     artifactType: 'container'
   displayName: Publish artifacts
-
-
-- task: DownloadPipelineArtifact@2
-  inputs:
-    path: $(build.artifactStagingDirectory)/drop/container/apk
-    artifact: WebApp
