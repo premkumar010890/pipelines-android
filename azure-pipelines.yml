@@ -34,10 +34,11 @@ steps:
     artifactType: 'container'
   displayName: Publish artifacts
 
-steps:
-- publish: $(System.DefaultWorkingDirectory)/bin/WebApp
-  artifact: WebApp
+- task: PublishPipelineArtifact@1
+  inputs:
+    path: $(System.DefaultWorkingDirectory)/bin/WebApp
+    artifact: WebApp
 
-  steps:
-- download: current
-  artifact: WebApp
+- task: DownloadPipelineArtifact@2
+  inputs:
+    artifact: WebApp
