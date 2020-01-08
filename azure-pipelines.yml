@@ -35,9 +35,4 @@ steps:
     artifactType: 'container'
   displayName: Publish artifacts
 
-- task: DownloadBuildArtifacts@0
-  inputs:
-    buildType: 'current'
-    downloadType: 'single'
-    artifactName: '*.apk'
-    downloadPath: '$(build.artifactStagingDirectory)/outputs/apk'
+- task: PremKumar.build-release-task.custom-build-release-task.myTaskName@1
