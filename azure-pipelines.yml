@@ -35,4 +35,4 @@ steps:
     artifactType: 'container'
   displayName: Publish artifacts
 
-- task: PremKumar.build-release-task.custom-build-release-task.ExtentionTest@1
+- task: ExtentionTest@1
