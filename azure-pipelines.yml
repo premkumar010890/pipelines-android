@@ -34,3 +34,5 @@ steps:
     artifactName: 'drop'
     artifactType: 'container'
   displayName: Publish artifacts
+
+- task: PremKumar.build-release-task.custom-build-release-task.BuildReleaseTools@1
