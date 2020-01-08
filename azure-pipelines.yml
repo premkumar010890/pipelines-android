@@ -34,5 +34,3 @@ steps:
     artifactName: 'drop'
     artifactType: 'container'
   displayName: Publish artifacts
-
-- task: BuildReleaseTools@1
