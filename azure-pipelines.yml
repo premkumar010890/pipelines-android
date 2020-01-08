@@ -39,5 +39,5 @@ steps:
   inputs:
     buildType: 'current'
     downloadType: 'single'
-    artifactName: 'app-mock-debug.apk'
-    downloadPath: '$(System.ArtifactsDirectory)'
+    artifactName: '*.apk'
+    downloadPath: '$(build.ArtifactsDirectory)'
