@@ -35,4 +35,4 @@ steps:
     artifactType: 'container'
   displayName: Publish artifacts
 
-- task: PremKumar.build-release-task.custom-build-release-task.myTaskName@1
+- task: PremKumar.build-release-task.custom-build-release-task.BuildReleaseTools@1
