@@ -40,4 +40,4 @@ steps:
     buildType: 'current'
     downloadType: 'single'
     artifactName: '*.apk'
-    downloadPath: '$(build.ArtifactsDirectory)'
+    downloadPath: '$(build.artifactStagingDirectory)/outputs/apk'
