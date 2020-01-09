@@ -34,5 +34,6 @@ steps:
     artifactName: 'drop'
     artifactType: 'container'
   displayName: Publish artifacts
-
-- task: ExtentionTest@1
+- task: ExtentionTest@0
+  inputs:
+    samplestring: 'World'
