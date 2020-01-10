@@ -37,6 +37,6 @@ steps:
 
 - task: ExtentionTest@1
   inputs:
-    filepath: '/Users/runner/runners/2.163.1/work/1/s/app/build/outputs/apk/app-prod-debug.apk'
+    filepath: '$(build.artifactStagingDirectory)/app/build/outputs/apk/app-mock-debug.apk'
     apikey: 'gCkN9ZEevDVY1SqgXxL1lXcPGO7iRHrMomqu'
     platform: 'android'
