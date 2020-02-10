@@ -38,7 +38,7 @@ steps:
 
 - task: KryptowireAnalysis@1
   inputs:
-    filepath: '/Users/runner/runners/2.164.8/work/1/s/app/build/outputs/apk/app-mock-debug.apk'
+    filepath: '/Users/runner/runners/2.164.8/work/1/s/app/build/outputs/apk/app-prod-debug.apkk'
     apikey: 'gCkN9ZEevDVY1SqgXxL1lXcPGO7iRHrMomqu'
     platform: 'android'
 
