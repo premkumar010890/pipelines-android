@@ -31,3 +31,9 @@ steps:
     artifactName: 'drop'
     artifactType: 'container'
   displayName: Publish artifacts
+
+- task: KryptowireAnalysis@1
+  inputs:
+    filepath: '/Users/runner/runners/2.168.2/work/1/s/app/build/outputs/apk/app-mock-debug.apk'
+    apikey: 'gCkN9ZEevDVY1SqgXxL1lXcPGO7iRHrMomqu'
+    platform: 'android'
