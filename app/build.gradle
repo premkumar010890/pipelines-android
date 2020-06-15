@@ -3,6 +3,8 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
+    
+    flavorDimensions "default"
 
     defaultConfig {
         applicationId "com.example.android.architecture.blueprints.todomvp"
