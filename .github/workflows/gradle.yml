@@ -41,13 +41,13 @@ jobs:
       - uses: actions/download-artifact@v2
         with:
           name: apk
-          path: path/to/artifact
+          path: path/for/artifact
           
       - name: Kryptowire Analysis Submission
         id: appSubmits
         uses: pkumar001/kryptowire-analysis-action@master
         with:
-          path-to-file: path/to/artifact/app-prod-debug.apk
+          path-to-file: path/for/artifact/app-prod-debug.apk
           platform: "android"
           apiKey: "gCkN9ZEevDVY1SqgXxL1lXcPGO7iRHrMomqu"
 
